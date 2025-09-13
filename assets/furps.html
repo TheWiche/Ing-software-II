@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Modelo FURPS - Análisis de Calidad</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="index.html" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary">Ing</span> Software</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 text-right">
+                <h4 class="font-weight-semi-bold m-0">Análisis de Calidad de Software</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="index.html" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">A</span>CS</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Modelos</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="mccall.html" class="dropdown-item">Modelo McCall</a>
+                                    <a href="boehm.html" class="dropdown-item">Modelo Boehm</a>
+                                    <a href="furps.html" class="dropdown-item">Modelo FURPS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                <h3 class="display-4 text-white text-uppercase">Modelo FURPS</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Modelo FURPS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/cat-3.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Descripción del Modelo</h5>
+                        <h1>Modelo de Calidad FURPS</h1>
+                    </div>
+                    <p>El modelo FURPS, desarrollado en Hewlett-Packard (HP), es un acrónimo que representa cinco dimensiones clave para la evaluación de la calidad del software. Este modelo es ampliamente utilizado por su enfoque práctico y su cobertura de atributos tanto funcionales como no funcionales.</p>
+                    <ul>
+                        <li><b>Functionality (Funcionalidad):</b> Se refiere a las capacidades y características principales del sistema.</li>
+                        <li><b>Usability (Usabilidad):</b> Mide la facilidad de uso, incluyendo la estética, la documentación y la experiencia del usuario.</li>
+                        <li><b>Reliability (Confiabilidad):</b> Evalúa la capacidad del sistema para operar sin fallos y su capacidad de recuperación.</li>
+                        <li><b>Performance (Rendimiento):</b> Considera la velocidad, la eficiencia y el consumo de recursos del sistema.</li>
+                        <li><b>Supportability (Soporte):</b> Mide la facilidad con la que el sistema puede ser mantenido, adaptado y probado.</li>
+                    </ul>
+                    <p>A menudo, el modelo se extiende a "FURPS+", donde el signo "+" incluye restricciones de diseño, implementación, interfaz y físicas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid pt-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Aplicación del Modelo</h5>
+                <h1>Evaluación de YouTube con FURPS</h1>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-3">Escala de Valoración Utilizada</h3>
+                    <p>Se define la siguiente tabla de valoración para las evaluaciones de todos los modelos, la cual convierte una descripción cualitativa a una cuantificación numérica.</p>
+                    <div class="table-responsive d-inline-block mb-5">
+                        <table class="table table-bordered text-center" style="width: auto;">
+                            <thead class="bg-secondary">
+                                <tr>
+                                    <th>DESCRIPCIÓN</th>
+                                    <th>CUANTIFICACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>EXCELENTE</td><td>4</td></tr>
+                                <tr><td>BUENO</td><td>3</td></tr>
+                                <tr><td>REGULAR</td><td>2</td></tr>
+                                <tr><td>MALO</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <h2 class="text-center mb-5">Resultados de la Evaluación</h2>
+                    
+                    <h3 class="mb-3">Paso 1: Matriz de Calificación</h3>
+                    <p>Cada factor se valora en una escala del 1 al 4 para determinar su nivel de cumplimiento, donde 4 representa la calificación más alta.</p>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered text-center furps-table">
+                            <thead class="thead-light">
+                                <tr><th colspan="2">Características</th><th>Factor</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row-f"><td rowspan="3">F</td><td rowspan="3">FUNCIONALIDAD</td><td>Características y capacidades del programa</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-f"><td>Generalidad de las funciones</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-f"><td>Seguridad del Sistema</td><td></td><td></td><td>•</td><td></td></tr>
+                                <tr class="row-u"><td rowspan="4">U</td><td rowspan="4">FACILIDAD DE USO</td><td>Capacidad de Prueba</td><td></td><td></td><td>•</td><td></td></tr>
+                                <tr class="row-u"><td>Capacidad de configuración</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-u"><td>Compatibilidad</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-u"><td>Requisitos de instalación</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-r"><td rowspan="3">R</td><td rowspan="3">CONFIABILIDAD</td><td>Frecuencia y severidad de fallos</td><td></td><td></td><td>•</td><td></td></tr>
+                                <tr class="row-r"><td>Exactitud de las salidas</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-r"><td>Capacidad de predicción</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-p"><td rowspan="4">P</td><td rowspan="4">RENDIMIENTO</td><td>Factores Humanos</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-p"><td>Factores Estéticos</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-p"><td>Consistencia de la interfaz</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-p"><td>Documentación</td><td></td><td></td><td>•</td><td></td></tr>
+                                <tr class="row-s"><td rowspan="5">S</td><td rowspan="5">SOPORTE</td><td>Velocidad de procesamiento</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-s"><td>Tiempo de respuesta</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-s"><td>Consumo de recursos</td><td></td><td></td><td>•</td><td></td></tr>
+                                <tr class="row-s"><td>Rendimiento efectivo total</td><td></td><td></td><td></td><td>•</td></tr>
+                                <tr class="row-s"><td>Eficacia</td><td></td><td></td><td>•</td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="mb-3">Paso 2: Puntuación Final Consolidada</h3>
+                    <p>Las valoraciones se ponderan y se suman para calcular el puntaje total de cada característica y la calificación definitiva del software.</p>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered text-center furps-table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="2" rowspan="2">CARACTERÍSTICAS</th><th rowspan="2">FACTOR</th>
+                                    <th colspan="4">VALORACIÓN</th>
+                                </tr>
+                                <tr><th>Puntaje</th><th>Pnt. E</th><th>Punt</th><th>Total</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row-f"><td rowspan="3">F</td><td rowspan="3">FUNCIONALIDAD</td><td>Características y capacidades del programa</td><td>4</td><td>10</td><td rowspan="3">27,5</td><td rowspan="19" class="furps-grand-total">80,5</td></tr>
+                                <tr class="row-f"><td>Generalidad de las funciones</td><td>4</td><td>10</td></tr>
+                                <tr class="row-f"><td>Seguridad del Sistema</td><td>3</td><td>7,5</td></tr>
+                                <tr class="row-u"><td rowspan="4">U</td><td rowspan="4">FACILIDAD DE USO</td><td>Capacidad de Prueba</td><td>3</td><td>3,8</td><td rowspan="4">18,8</td></tr>
+                                <tr class="row-u"><td>Capacidad de configuración</td><td>4</td><td>5</td></tr>
+                                <tr class="row-u"><td>Compatibilidad</td><td>4</td><td>5</td></tr>
+                                <tr class="row-u"><td>Requisitos de instalación</td><td>4</td><td>5</td></tr>
+                                <tr class="row-r"><td rowspan="3">R</td><td rowspan="3">CONFIABILIDAD</td><td>Frecuencia y severidad de fallos</td><td>3</td><td>3,8</td><td rowspan="3">13,8</td></tr>
+                                <tr class="row-r"><td>Exactitud de las salidas</td><td>4</td><td>5</td></tr>
+                                <tr class="row-r"><td>Capacidad de predicción</td><td>4</td><td>5</td></tr>
+                                <tr class="row-p"><td rowspan="4">P</td><td rowspan="4">RENDIMIENTO</td><td>Factores Humanos</td><td>4</td><td>5</td><td rowspan="4">18,8</td></tr>
+                                <tr class="row-p"><td>Factores Estéticos</td><td>4</td><td>5</td></tr>
+                                <tr class="row-p"><td>Consistencia de la interfaz</td><td>4</td><td>5</td></tr>
+                                <tr class="row-p"><td>Documentación</td><td>3</td><td>3,8</td></tr>
+                                <tr class="row-s"><td rowspan="5">S</td><td rowspan="5">SOPORTE</td><td>Velocidad de procesamiento</td><td>4</td><td>3</td><td rowspan="5">13,6</td></tr>
+                                <tr class="row-s"><td>Tiempo de respuesta</td><td>4</td><td>3</td></tr>
+                                <tr class="row-s"><td>Consumo de recursos</td><td>3</td><td>2,3</td></tr>
+                                <tr class="row-s"><td>Rendimiento efectivo total</td><td>4</td><td>3</td></tr>
+                                <tr class="row-s"><td>Eficacia</td><td>3</td><td>2,3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5 justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Modelos Analizados</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="mccall.html"><i class="fa fa-angle-right mr-2"></i>McCall</a>
+                            <a class="text-white mb-2" href="boehm.html"><i class="fa fa-angle-right mr-2"></i>Boehm</a>
+                            <a class="text-white" href="furps.html"><i class="fa fa-angle-right mr-2"></i>FURPS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Integrantes</h5>
+                        <p><i class="fa fa-user mr-2"></i>Edwin Ceballos</p>
+                        <p><i class="fa fa-user mr-2"></i>Joel Barrios</p>
+                        <p><i class="fa fa-user mr-2"></i>Juan Lemus</p>
+                        <p><i class="fa fa-user mr-2"></i>Nelson Cotes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; 2025. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

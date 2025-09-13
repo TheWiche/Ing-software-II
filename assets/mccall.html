@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Modelo McCall - Análisis de Calidad</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="index.html" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary">Ing</span> Software</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 text-right">
+                <h4 class="font-weight-semi-bold m-0">Análisis de Calidad de Software</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="index.html" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">Ing</span> Software</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Modelos</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="mccall.html" class="dropdown-item">Modelo McCall</a>
+                                    <a href="boehm.html" class="dropdown-item">Modelo Boehm</a>
+                                    <a href="furps.html" class="dropdown-item">Modelo FURPS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                <h3 class="display-4 text-white text-uppercase">Modelo McCall</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Modelo McCall</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Descripción del Modelo</h5>
+                        <h1>Modelo de Calidad de McCall</h1>
+                    </div>
+                    <p>Propuesto por James A. McCall en 1977, este es uno de los primeros modelos de calidad de software y se centra en la perspectiva del usuario final. El modelo establece una clasificación de los atributos de calidad del software en tres categorías principales o "perspectivas":</p>
+                    <ul>
+                        <li><b>Operación del Producto:</b> Evalúa cómo funciona el software en su entorno operativo normal (Corrección, Confiabilidad, Usabilidad, Integridad, Eficiencia).</li>
+                        <li><b>Revisión del Producto:</b> Mide la facilidad con la que el software puede ser modificado o mantenido (Facilidad de Mantenimiento, Flexibilidad, Facilidad de Prueba).</li>
+                        <li><b>Transición del Producto:</b> Considera la capacidad del software para adaptarse a nuevos entornos (Portabilidad, Reusabilidad, Interoperabilidad).</li>
+                    </ul>
+                    <p>Estos 11 factores de calidad se miden a través de métricas específicas, creando una estructura jerárqu-ica que va desde lo general a lo particular.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid pt-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Aplicación del Modelo</h5>
+                <h1>Evaluación de YouTube con McCall</h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-3">Escala de Valoración Utilizada</h3>
+                    <p>Se define la siguiente tabla de valoración para las evaluaciones de todos los modelos, la cual convierte una descripción cualitativa a una cuantificación numérica.</p>
+                    <div class="table-responsive d-inline-block mb-5">
+                        <table class="table table-bordered text-center" style="width: auto;">
+                            <thead class="bg-secondary">
+                                <tr>
+                                    <th>DESCRIPCIÓN</th>
+                                    <th>CUANTIFICACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>EXCELENTE</td><td>4</td></tr>
+                                <tr><td>BUENO</td><td>3</td></tr>
+                                <tr><td>REGULAR</td><td>2</td></tr>
+                                <tr><td>MALO</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    
+                    <h2 class="text-center mb-5">Resultados de la Evaluación</h2>
+
+                    <h3 class="mb-3">Paso 1: Cuestionario Cualitativo</h3>
+                    <p>Se inicia la evaluación respondiendo un cuestionario para asignar una calificación a cada métrica según el desempeño de YouTube.</p>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-light">
+                                <tr><th>Métricas</th><th>Preguntas</th><th>Puntaje Esperado</th><th>Puntaje Obtenido</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Compleción de las funciones</td><td>¿YouTube permite acceder, visualizar, subir y compartir videos de forma completa según los requerimientos de la plataforma?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Complejidad</td><td>¿La interfaz es sencilla o requiere múltiples pasos?</td><td>EXCELENTE</td><td>BUENO</td></tr>
+                                <tr><td>Concisión</td><td>¿Los menús y controles son claros y sin redundancias?</td><td>EXCELENTE</td><td>BUENO</td></tr>
+                                <tr><td>Consistencia</td><td>¿Mantiene diseño uniforme entre dispositivos?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Eficiencia de ejecución</td><td>¿La plataforma carga los videos de manera rápida y sin consumir excesivos recursos del dispositivo?</td><td>EXCELENTE</td><td>BUENO</td></tr>
+                                <tr><td>Estandarización de datos y estructuras</td><td>¿YouTube presenta y organiza la información de manera estructurada y uniforme?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Exactitud de cálculo y de control</td><td>¿El algoritmo de búsqueda y recomendación es preciso?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Independencia del software</td><td>¿YouTube funciona de manera estable en distintos sistemas operativos y navegadores?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Modularidad</td><td>¿Las funciones (reproducción, comentarios, shorts, etc.) son independientes?</td><td>EXCELENTE</td><td>BUENO</td></tr>
+                                <tr><td>Operatividad</td><td>¿La interfaz de YouTube facilita el uso a usuarios sin necesidad de conocimientos técnicos avanzados?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Seguridad</td><td>¿Protege datos personales y ofrece control de privacidad?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                                <tr><td>Simplicidad</td><td>¿YouTube es fácil de entender?</td><td>EXCELENTE</td><td>EXCELENTE</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="mb-3">Paso 2: Consolidación Numérica por Factor</h3>
+                    <p>Las calificaciones se convierten a valores numéricos y se promedian para cada factor de calidad.</p>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered text-center mccall-table">
+                             <thead>
+                                <tr>
+                                    <th rowspan="2">Métricas</th>
+                                    <th colspan="4" class="operacion-header">OPERACIÓN</th>
+                                    <th colspan="3" class="transicion-header">TRANSICIÓN</th>
+                                    <th colspan="3" class="revision-header">REVISIÓN</th>
+                                </tr>
+                                <tr>
+                                    <th class="vertical-text">Corrección</th><th class="vertical-text">Confiabilidad</th><th class="vertical-text">Usabilidad</th><th class="vertical-text">Int. o Seguridad</th>
+                                    <th class="vertical-text">Portabilidad</th><th class="vertical-text">Reusabilidad</th><th class="vertical-text">Interoperabilidad</th>
+                                    <th class="vertical-text">Facilidad Mantenimiento</th><th class="vertical-text">Flexibilidad</th><th class="vertical-text">Facilidad de Prueba</th>
+                                </tr>
+                             </thead>
+                             <tbody>
+                                <tr><td>Compleción de las funciones</td><td>4</td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td>Complejidad</td><td></td><td>3</td><td></td><td></td><td></td><td></td><td></td><td>3</td><td>3</td><td></td></tr>
+                                <tr><td>Concisión</td><td></td><td></td><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td></tr>
+                                <tr><td>Consistencia</td><td>3</td><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td></tr>
+                                <tr><td>Eficiencia de ejecución</td><td></td><td>3</td><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td>Estandarización de datos y estructuras</td><td></td><td>4</td><td></td><td></td><td></td><td></td><td>4</td><td></td><td></td><td>4</td></tr>
+                                <tr><td>Exactitud de cálculo y de control</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td>Independencia del software</td><td></td><td></td><td></td><td></td><td>4</td><td>4</td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td>Modularidad</td><td></td><td></td><td></td><td></td><td></td><td>3</td><td></td><td>3</td><td>3</td><td>3</td></tr>
+                                <tr><td>Operatividad</td><td></td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td>Seguridad</td><td></td><td></td><td></td><td>3</td><td></td><td></td><td></td><td></td><td></td><td>4</td></tr>
+                                <tr><td>Simplicidad</td><td></td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                             </tbody>
+                             <tfoot class="font-weight-bold">
+                                <tr><td>Puntaje Promedio</td><td>3.6</td><td>3.3</td><td>3.6</td><td>3.0</td><td>4.0</td><td>3.0</td><td>4.0</td><td>3.0</td><td>3.5</td><td>3.6</td></tr>
+                                <tr><td>Puntaje Escala</td><td>8.8</td><td>7.9</td><td>8.8</td><td>7.0</td><td>10</td><td>7.0</td><td>10</td><td>7.0</td><td>8.5</td><td>8.8</td></tr>
+                                <tr><td>Promedio Obtenido</td><td colspan="4">8.1</td><td colspan="3">9.0</td><td colspan="3">8.1</td></tr>
+                             </tfoot>
+                        </table>
+                    </div>
+
+                    <h3 class="mb-3">Paso 3: Puntuación Final Consolidada</h3>
+                    <p>Los puntajes ponderados de cada factor se suman para determinar la calificación final de cada capacidad y el puntaje total del software.</p>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered text-center">
+                            <thead class="thead-light">
+                                <tr><th>Capacidad</th><th>Puntaje Global</th><th>Factor</th><th>Puntaje Factor</th><th>Puntaje Obtenido</th><th>Puntaje Capacidad</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="operacion-row"><td rowspan="4">OPERACIÓN</td><td rowspan="4">40</td><td>Corrección</td><td>10</td><td>8.8</td><td rowspan="4">32.5</td></tr>
+                                <tr class="operacion-row"><td>Confiabilidad</td><td>10</td><td>7.9</td></tr>
+                                <tr class="operacion-row"><td>Usabilidad</td><td>10</td><td>8.8</td></tr>
+                                <tr class="operacion-row"><td>Integridad o Seguridad</td><td>10</td><td>7.0</td></tr>
+                                <tr class="transicion-row"><td rowspan="3">TRANSICIÓN</td><td rowspan="3">30</td><td>Portabilidad</td><td>10</td><td>10</td><td rowspan="3">27</td></tr>
+                                <tr class="transicion-row"><td>Reusabilidad</td><td>10</td><td>7.0</td></tr>
+                                <tr class="transicion-row"><td>Interoperabilidad</td><td>10</td><td>10</td></tr>
+                                <tr class="revision-row"><td rowspan="3">REVISIÓN</td><td rowspan="3">30</td><td>Facilidad Mantenimiento</td><td>10</td><td>7.0</td><td rowspan="3">24.3</td></tr>
+                                <tr class="revision-row"><td>Flexibilidad</td><td>10</td><td>8.5</td></tr>
+                                <tr class="revision-row"><td>Facilidad de Prueba</td><td>10</td><td>8.8</td></tr>
+                            </tbody>
+                            <tfoot class="font-weight-bold table-secondary">
+                                <tr><td>Puntaje Total</td><td>100</td><td></td><td>100</td><td>83.8</td><td>83.8</td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5 justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Modelos Analizados</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="mccall.html"><i class="fa fa-angle-right mr-2"></i>McCall</a>
+                            <a class="text-white mb-2" href="boehm.html"><i class="fa fa-angle-right mr-2"></i>Boehm</a>
+                            <a class="text-white" href="furps.html"><i class="fa fa-angle-right mr-2"></i>FURPS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Integrantes</h5>
+                        <p><i class="fa fa-user mr-2"></i>Edwin Ceballos</p>
+                        <p><i class="fa fa-user mr-2"></i>Joel Barrios</p>
+                        <p><i class="fa fa-user mr-2"></i>Juan Lemus</p>
+                        <p><i class="fa fa-user mr-2"></i>Nelson Cotes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; 2025. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,126 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea Académica: Conceptos y Resultados</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Análisis de Calidad de Software</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Análisis de Calidad de Software" name="keywords">
+    <meta content="Proyecto de análisis de calidad de software usando modelos McCall, Boehm y FURPS" name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-
-    <header>
-        <h1>Conceptos Fundamentales</h1>
-        <p>Un análisis detallado de tres conceptos clave, sus implicaciones y resultados.</p>
-    </header>
-
-    <main>
-        <section id="conceptos">
-            <h2>Descripciones de Conceptos</h2>
-            <div class="concepto-card">
-                <h3>Concepto 1: [Nombre del Concepto 1]</h3>
-                <p>Aquí va la descripción detallada del primer concepto. Explica qué es, su relevancia y el contexto en el que se aplica.</p>
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="index.html" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary">Ing</span> Software</h1>
+                </a>
             </div>
-            <div class="concepto-card">
-                <h3>Concepto 2: [Nombre del Concepto 2]</h3>
-                <p>Aquí va la descripción detallada del segundo concepto. Puedes usar ejemplos o analogías para hacerlo más comprensible.</p>
+            <div class="col-lg-9 text-right">
+                <h4 class="font-weight-semi-bold m-0">Análisis de Calidad de Software</h4>
             </div>
-            <div class="concepto-card">
-                <h3>Concepto 3: [Nombre del Concepto 3]</h3>
-                <p>Aquí va la descripción detallada del tercer concepto. Asegúrate de destacar sus puntos clave y su relación con los otros conceptos.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="index.html" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">A</span>CS</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Modelos</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="assets/mccall.html" class="dropdown-item">Modelo McCall</a>
+                                    <a href="assets/boehm.html" class="dropdown-item">Modelo Boehm</a>
+                                    <a href="assets/furps.html" class="dropdown-item">Modelo FURPS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </section>
+        </div>
+    </div>
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="img/carousel-1.jpg" style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5 text-center" style="width: 100%; max-width: 900px;">
+                            <h1 class="display-3 text-white mb-md-4">Análisis de Calidad de Software</h1>
+                            <p class="lead text-white" style="font-size: 1.25rem;">Este proyecto presenta un análisis comparativo de la calidad de la plataforma YouTube utilizando tres modelos estándar de la industria: McCall, Boehm y FURPS.</p>
+                            <a href="#modelos" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Ver Modelos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Plataforma Seleccionada</h5>
+                <h1>Software a Evaluar</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" style="font-size: 1.1rem;">
+                            <tbody>
+                                <tr>
+                                    <th class="bg-secondary" style="width: 25%;">NOMBRE DEL SOFTWARE</th>
+                                    <td><h2 class="font-weight-bold m-0">YouTube</h2></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary">REPOSITORIO</th>
+                                    <td>YouTube (abreviado como YT) es una red social y plataforma de video online estadounidense propiedad de Google LLC. YouTube fue fundada el 14 de febrero de 2005 por Steve Chen, Chad Hurley y Jawed Karim, tres antiguos empleados de PayPal. <a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary">DESCRIPCIÓN</th>
+                                    <td>Plataforma web de videos en línea, frontend basado en HTML5, CSS y JavaScript (JS), y backend desarrollado principalmente en Python, C++ y Java, que permiten la organización, publicación y acceso interactivo a contenidos audiovisuales educativos y de entretenimiento.</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary">LICENCIA DE USO</th>
+                                    <td>Gratuita con registro de usuario, bajo propiedad de Google LLC. Ofrece versión gratuita con publicidad y versión de pago (YouTube Premium).</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary">ÁREA DE APLICACIÓN</th>
+                                    <td>
+                                        <ul>
+                                            <li><b>Educación</b> (canales educativos, conferencias, tutoriales).</li>
+                                            <li><b>Entretenimiento</b> (música, cine, series, transmisiones en vivo).</li>
+                                            <li><b>Comunicación y redes sociales</b> (comentarios, suscripciones, transmisiones en vivo (streams)).</li>
+                                            <li><b>Marketing y negocios</b> (publicidad digital, branding, difusión de contenidos).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-secondary">LINK DE ACCESO</th>
+                                    <td><a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modelos" class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Análisis</h5>
+                <h1>Modelos de Calidad de Software</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-1.jpg" alt="Modelo McCall">
+                        <a class="cat-overlay text-white text-decoration-none" href="assets/mccall.html">
+                            <h4 class="text-white font-weight-medium">Modelo McCall</h4>
+                            <span>Análisis de Operación, Transición y Revisión.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-2.jpg" alt="Modelo Boehm">
+                        <a class="cat-overlay text-white text-decoration-none" href="assets/boehm.html">
+                            <h4 class="text-white font-weight-medium">Modelo Boehm</h4>
+                            <span>Análisis Jerárquico de Características.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/cat-3.jpg" alt="Modelo FURPS">
+                        <a class="cat-overlay text-white text-decoration-none" href="assets/furps.html">
+                            <h4 class="text-white font-weight-medium">Modelo FURPS</h4>
+                            <span>Análisis de Funcionalidad, Usabilidad y más.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Resultados</h5>
+                <h1>Comparación y Conclusiones Finales</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h3 class="mb-3">Comparación de Resultados</h3>
+                    <div class="table-responsive mb-5">
+                        <table class="table table-bordered table-striped text-center">
+                            <thead class="bg-secondary text-dark">
+                                <tr>
+                                    <th>MODELO</th>
+                                    <th>PUNTAJE FINAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-weight-medium">McCall</td>
+                                    <td class="font-weight-bold h5">83,8</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-medium">Boehm</td>
+                                    <td class="font-weight-bold h5">87,1</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-medium">FURPS</td>
+                                    <td class="font-weight-bold h5">80,5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-        <section id="tablas">
-            <h2>Análisis y Datos</h2>
-            <div class="tabla-container">
-                <h3>Tabla 1: [Título de la Tabla 1]</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Columna 1</th>
-                            <th>Columna 2</th>
-                            <th>Columna 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Dato A1</td>
-                            <td>Dato B1</td>
-                            <td>Dato C1</td>
-                        </tr>
-                        <tr>
-                            <td>Dato A2</td>
-                            <td>Dato B2</td>
-                            <td>Dato C2</td>
-                        </tr>
-                        <tr>
-                            <td>Dato A3</td>
-                            <td>Dato B3</td>
-                            <td>Dato C3</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <h3 class="mb-4">Conclusiones</h3>
+                    <p>Los modelos de calidad sirven como herramienta de evaluación para medir la calidad de un software; para el caso del modelo McCall, Boëhm y FURPS se obtiene un puntaje de <strong>83,8</strong>, ya que la ponderación de puntajes se basa en las características de operación, transición y revisión de YouTube, destacando principalmente su corrección, confiabilidad y usabilidad, lo que resalta la robustez y facilidad de uso de la plataforma.</p>
+                    <p>Con el modelo Boehm, se tuvieron en cuenta una serie de métricas que permiten obtener un puntaje de <strong>87,1</strong> en cuanto a la utilidad general de YouTube respecto a sus características de alto nivel, nivel intermedio y primitivas, siendo determinante su portabilidad y adaptabilidad en diferentes dispositivos y sistemas operativos.</p>
+                    <p>Con el modelo FURPS, se obtuvo un puntaje de <strong>80,5</strong>, que equilibra la ponderación en cinco características, permitiendo un balance valorativo en la evaluación de YouTube, al comparar su funcionalidad, confiabilidad, facilidad de uso, rendimiento y soporte, aunque con posibles áreas de mejora en los dos últimos aspectos.</p>
+                </div>
             </div>
-            <div class="tabla-container">
-                <h3>Tabla 2: [Título de la Tabla 2]</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Columna A</th>
-                            <th>Columna B</th>
-                            <th>Columna C</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Dato A1</td>
-                            <td>Dato B1</td>
-                            <td>Dato C1</td>
-                        </tr>
-                        <tr>
-                            <td>Dato A2</td>
-                            <td>Dato B2</td>
-                            <td>Dato C2</td>
-                        </tr>
-                        <tr>
-                            <td>Dato A3</td>
-                            <td>Dato B3</td>
-                            <td>Dato C3</td>
-                        </tr>
-                    </tbody>
-                </table>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5 justify-content-center">
+            <div class="col-lg-10 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Modelos Analizados</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="assets/mccall.html"><i class="fa fa-angle-right mr-2"></i>McCall</a>
+                            <a class="text-white mb-2" href="assets/boehm.html"><i class="fa fa-angle-right mr-2"></i>Boehm</a>
+                            <a class="text-white" href="assets/furps.html"><i class="fa fa-angle-right mr-2"></i>FURPS</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Integrantes</h5>
+                        <p><i class="fa fa-user mr-2"></i>Edwin Ceballos</p>
+                        <p><i class="fa fa-user mr-2"></i>Joel Barrios</p>
+                        <p><i class="fa fa-user mr-2"></i>Juan Lemus</p>
+                        <p><i class="fa fa-user mr-2"></i>Nelson Cotes</p>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="resultados">
-            <h2>Resultados Claves</h2>
-            <div class="resultado-item">
-                <h3>Resultado del Análisis</h3>
-                <p>En esta sección, se presentan los resultados más importantes de la investigación o tarea. Puede ser un texto conciso o puntos clave.</p>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; 2025. Todos los Derechos Reservados.</p>
             </div>
-            <div class="resultado-item">
-                <h3>Gráfico/Imagen de Resultados</h3>
-                <img src="https://via.placeholder.com/600x400.png?text=Gráfico+de+Resultados" alt="Gráfico o Imagen de los resultados obtenidos">
-                <p class="caption">Descripción de la imagen o gráfico anterior.</p>
-            </div>
-        </section>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-        <section id="conclusiones">
-            <h2>Conclusiones</h2>
-            <p>Aquí se resumen los hallazgos más significativos de la tarea. Destaca lo más importante y cierra el análisis.</p>
-            <ul>
-                <li><strong>Conclusión 1:</strong> Resumen de un punto clave.</li>
-                <li><strong>Conclusión 2:</strong> Otro punto importante.</li>
-                <li><strong>Conclusión 3:</strong> El hallazgo final o la perspectiva a futuro.</li>
-            </ul>
-        </section>
-    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <footer>
-        <p>Diseño y Estructura por [Tu Nombre] - Tarea de [Nombre de la Asignatura/Proyecto]</p>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
