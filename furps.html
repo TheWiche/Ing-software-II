@@ -33,7 +33,7 @@
     </div>
     <div class="container-fluid">
         <div class="row border-top px-xl-5">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="index.html" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0"><span class="text-primary">Ing</span> Software</h1>
@@ -83,14 +83,8 @@
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Descripción del Modelo</h5>
                         <h1>Modelo de Calidad FURPS</h1>
                     </div>
-                    <p>El modelo FURPS, desarrollado en Hewlett-Packard (HP), es un acrónimo que representa cinco dimensiones clave para la evaluación de la calidad del software. Este modelo es ampliamente utilizado por su enfoque práctico y su cobertura de atributos tanto funcionales como no funcionales.</p>
-                    <ul>
-                        <li><b>Functionality (Funcionalidad):</b> Se refiere a las capacidades y características principales del sistema.</li>
-                        <li><b>Usability (Usabilidad):</b> Mide la facilidad de uso, incluyendo la estética, la documentación y la experiencia del usuario.</li>
-                        <li><b>Reliability (Confiabilidad):</b> Evalúa la capacidad del sistema para operar sin fallos y su capacidad de recuperación.</li>
-                        <li><b>Performance (Rendimiento):</b> Considera la velocidad, la eficiencia y el consumo de recursos del sistema.</li>
-                        <li><b>Supportability (Soporte):</b> Mide la facilidad con la que el sistema puede ser mantenido, adaptado y probado.</li>
-                    </ul>
+                    <p>En este modelo se emplea diferentes factores de calidad de software, identificando 5 características de los cuales se deriva su nombre <b>Functionality</b>, <b>Usability</b>, <b>Reliability</b>, Performance, <b>Supportability</b> (Funcionalidad, Facilidad de Uso, Fiabilidad, Rendimiento, Soporte).</p>
+                    <p>El modelo FURPS, desarrollado en Hewlett-Packard (HP), es un acrónimo que representa estas cinco dimensiones clave para la evaluación de la calidad. Es ampliamente utilizado por su enfoque práctico y su cobertura de atributos tanto funcionales como no funcionales.</p>
                     <p>A menudo, el modelo se extiende a "FURPS+", donde el signo "+" incluye restricciones de diseño, implementación, interfaz y físicas.</p>
                 </div>
             </div>
@@ -104,7 +98,7 @@
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Aplicación del Modelo</h5>
                 <h1>Evaluación de YouTube con FURPS</h1>
             </div>
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <h3 class="mb-3">Escala de Valoración Utilizada</h3>
@@ -127,75 +121,116 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12">
+                    
+                    <h3 class="mb-3">Estructura y Puntuación del Modelo</h3>
+                    <p>El modelo distribuye su puntuación entre cinco atributos de calidad, cada uno de los cuales se desglosa en factores específicos con un peso determinado.</p>
+                    <div class="table-container mb-5">
+                        <div class="table-responsive">
+                            <table class="table furps-table text-center">
+                                <thead class="thead-light">
+                                    <tr><th colspan="2">Características</th><th>Puntaje</th><th>Factor</th><th>Puntaje</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row-f"><td rowspan="3" class="align-middle">F</td><td rowspan="3" class="align-middle">FUNCIONALIDAD</td><td rowspan="3" class="align-middle">30</td><td class="text-left bg-f-color">Características y capacidades del programa</td><td>10</td></tr>
+                                    <tr class="row-f"><td class="text-left">Generalidad de las funciones</td><td>10</td></tr>
+                                    <tr class="row-f"><td class="text-left">Seguridad del Sistema</td><td>10</td></tr>
+                                    <tr class="row-u"><td rowspan="4" class="align-middle">U</td><td rowspan="4" class="align-middle">FACILIDAD DE USO</td><td rowspan="4" class="align-middle">20</td><td class="text-left">Capacidad de Prueba</td><td>5</td></tr>
+                                    <tr class="row-u"><td class="text-left">Capacidad de configuración</td><td>5</td></tr>
+                                    <tr class="row-u"><td class="text-left">Compatibilidad</td><td>5</td></tr>
+                                    <tr class="row-u"><td class="text-left">Requisitos de instalación</td><td>5</td></tr>
+                                    <tr class="row-r"><td rowspan="3" class="align-middle">R</td><td rowspan="3" class="align-middle">CONFIABILIDAD</td><td rowspan="3" class="align-middle">15</td><td class="text-left">Frecuencia y severidad de fallos</td><td>5</td></tr>
+                                    <tr class="row-r"><td class="text-left">Exactitud de las salidas</td><td>5</td></tr>
+                                    <tr class="row-r"><td class="text-left">Capacidad de predicción</td><td>5</td></tr>
+                                    <tr class="row-p"><td rowspan="4" class="align-middle">P</td><td rowspan="4" class="align-middle">RENDIMIENTO</td><td rowspan="4" class="align-middle">20</td><td class="text-left">Factores Humanos</td><td>5</td></tr>
+                                    <tr class="row-p"><td class="text-left">Factores Estéticos</td><td>5</td></tr>
+                                    <tr class="row-p"><td class="text-left">Consistencia de la interfaz</td><td>5</td></tr>
+                                    <tr class="row-p"><td class="text-left">Documentación</td><td>5</td></tr>
+                                    <tr class="row-s"><td rowspan="5" class="align-middle">S</td><td rowspan="5" class="align-middle">SOPORTE</td><td rowspan="5" class="align-middle">15</td><td class="text-left">Velocidad de procesamiento</td><td>3</td></tr>
+                                    <tr class="row-s"><td class="text-left">Tiempo de respuesta</td><td>3</td></tr>
+                                    <tr class="row-s"><td class="text-left">Consumo de recursos</td><td>3</td></tr>
+                                    <tr class="row-s"><td class="text-left">Rendimiento efectivo total</td><td>3</td></tr>
+                                    <tr class="row-s"><td class="text-left">Eficacia</td><td>3</td></tr>
+                                </tbody>
+                                <tfoot class="font-weight-bold">
+                                    <tr><td colspan="4" class="text-right">Puntaje Total</td><td>100</td></tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
 
                     <h2 class="text-center mb-5">Resultados de la Evaluación</h2>
                     
-                    <h3 class="mb-3">Paso 1: Matriz de Calificación</h3>
+                    <h3 class="mb-3">Aplicación de la evaluación al RED</h3>
                     <p>Cada factor se valora en una escala del 1 al 4 para determinar su nivel de cumplimiento, donde 4 representa la calificación más alta.</p>
-                    <div class="table-responsive mb-5">
-                        <table class="table table-bordered text-center furps-table">
-                            <thead class="thead-light">
-                                <tr><th colspan="2">Características</th><th>Factor</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr class="row-f"><td rowspan="3">F</td><td rowspan="3">FUNCIONALIDAD</td><td>Características y capacidades del programa</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-f"><td>Generalidad de las funciones</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-f"><td>Seguridad del Sistema</td><td></td><td></td><td>•</td><td></td></tr>
-                                <tr class="row-u"><td rowspan="4">U</td><td rowspan="4">FACILIDAD DE USO</td><td>Capacidad de Prueba</td><td></td><td></td><td>•</td><td></td></tr>
-                                <tr class="row-u"><td>Capacidad de configuración</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-u"><td>Compatibilidad</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-u"><td>Requisitos de instalación</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-r"><td rowspan="3">R</td><td rowspan="3">CONFIABILIDAD</td><td>Frecuencia y severidad de fallos</td><td></td><td></td><td>•</td><td></td></tr>
-                                <tr class="row-r"><td>Exactitud de las salidas</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-r"><td>Capacidad de predicción</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-p"><td rowspan="4">P</td><td rowspan="4">RENDIMIENTO</td><td>Factores Humanos</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-p"><td>Factores Estéticos</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-p"><td>Consistencia de la interfaz</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-p"><td>Documentación</td><td></td><td></td><td>•</td><td></td></tr>
-                                <tr class="row-s"><td rowspan="5">S</td><td rowspan="5">SOPORTE</td><td>Velocidad de procesamiento</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-s"><td>Tiempo de respuesta</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-s"><td>Consumo de recursos</td><td></td><td></td><td>•</td><td></td></tr>
-                                <tr class="row-s"><td>Rendimiento efectivo total</td><td></td><td></td><td></td><td>•</td></tr>
-                                <tr class="row-s"><td>Eficacia</td><td></td><td></td><td>•</td><td></td></tr>
-                            </tbody>
-                        </table>
+                    <div class="table-container mb-5">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center furps-table">
+                                <thead class="thead-light">
+                                    <tr><th colspan="2">Características</th><th>Factor</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row-f"><td rowspan="3">F</td><td rowspan="3">FUNCIONALIDAD</td><td>Características y capacidades del programa</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-f"><td>Generalidad de las funciones</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-f"><td>Seguridad del Sistema</td><td></td><td></td><td>•</td><td></td></tr>
+                                    <tr class="row-u"><td rowspan="4">U</td><td rowspan="4">FACILIDAD DE USO</td><td>Capacidad de Prueba</td><td></td><td></td><td>•</td><td></td></tr>
+                                    <tr class="row-u"><td>Capacidad de configuración</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-u"><td>Compatibilidad</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-u"><td>Requisitos de instalación</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-r"><td rowspan="3">R</td><td rowspan="3">CONFIABILIDAD</td><td>Frecuencia y severidad de fallos</td><td></td><td></td><td>•</td><td></td></tr>
+                                    <tr class="row-r"><td>Exactitud de las salidas</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-r"><td>Capacidad de predicción</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-p"><td rowspan="4">P</td><td rowspan="4">RENDIMIENTO</td><td>Factores Humanos</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-p"><td>Factores Estéticos</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-p"><td>Consistencia de la interfaz</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-p"><td>Documentación</td><td></td><td></td><td>•</td><td></td></tr>
+                                    <tr class="row-s"><td rowspan="5">S</td><td rowspan="5">SOPORTE</td><td>Velocidad de procesamiento</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-s"><td>Tiempo de respuesta</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-s"><td>Consumo de recursos</td><td></td><td></td><td>•</td><td></td></tr>
+                                    <tr class="row-s"><td>Rendimiento efectivo total</td><td></td><td></td><td></td><td>•</td></tr>
+                                    <tr class="row-s"><td>Eficacia</td><td></td><td></td><td>•</td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
-                    <h3 class="mb-3">Paso 2: Puntuación Final Consolidada</h3>
+                    <h3 class="mb-3">Equivalencia de Puntajes</h3>
                     <p>Las valoraciones se ponderan y se suman para calcular el puntaje total de cada característica y la calificación definitiva del software.</p>
-                    <div class="table-responsive mb-5">
-                        <table class="table table-bordered text-center furps-table">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th colspan="2" rowspan="2">CARACTERÍSTICAS</th><th rowspan="2">FACTOR</th>
-                                    <th colspan="4">VALORACIÓN</th>
-                                </tr>
-                                <tr><th>Puntaje</th><th>Pnt. E</th><th>Punt</th><th>Total</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr class="row-f"><td rowspan="3">F</td><td rowspan="3">FUNCIONALIDAD</td><td>Características y capacidades del programa</td><td>4</td><td>10</td><td rowspan="3">27,5</td><td rowspan="19" class="furps-grand-total">80,5</td></tr>
-                                <tr class="row-f"><td>Generalidad de las funciones</td><td>4</td><td>10</td></tr>
-                                <tr class="row-f"><td>Seguridad del Sistema</td><td>3</td><td>7,5</td></tr>
-                                <tr class="row-u"><td rowspan="4">U</td><td rowspan="4">FACILIDAD DE USO</td><td>Capacidad de Prueba</td><td>3</td><td>3,8</td><td rowspan="4">18,8</td></tr>
-                                <tr class="row-u"><td>Capacidad de configuración</td><td>4</td><td>5</td></tr>
-                                <tr class="row-u"><td>Compatibilidad</td><td>4</td><td>5</td></tr>
-                                <tr class="row-u"><td>Requisitos de instalación</td><td>4</td><td>5</td></tr>
-                                <tr class="row-r"><td rowspan="3">R</td><td rowspan="3">CONFIABILIDAD</td><td>Frecuencia y severidad de fallos</td><td>3</td><td>3,8</td><td rowspan="3">13,8</td></tr>
-                                <tr class="row-r"><td>Exactitud de las salidas</td><td>4</td><td>5</td></tr>
-                                <tr class="row-r"><td>Capacidad de predicción</td><td>4</td><td>5</td></tr>
-                                <tr class="row-p"><td rowspan="4">P</td><td rowspan="4">RENDIMIENTO</td><td>Factores Humanos</td><td>4</td><td>5</td><td rowspan="4">18,8</td></tr>
-                                <tr class="row-p"><td>Factores Estéticos</td><td>4</td><td>5</td></tr>
-                                <tr class="row-p"><td>Consistencia de la interfaz</td><td>4</td><td>5</td></tr>
-                                <tr class="row-p"><td>Documentación</td><td>3</td><td>3,8</td></tr>
-                                <tr class="row-s"><td rowspan="5">S</td><td rowspan="5">SOPORTE</td><td>Velocidad de procesamiento</td><td>4</td><td>3</td><td rowspan="5">13,6</td></tr>
-                                <tr class="row-s"><td>Tiempo de respuesta</td><td>4</td><td>3</td></tr>
-                                <tr class="row-s"><td>Consumo de recursos</td><td>3</td><td>2,3</td></tr>
-                                <tr class="row-s"><td>Rendimiento efectivo total</td><td>4</td><td>3</td></tr>
-                                <tr class="row-s"><td>Eficacia</td><td>3</td><td>2,3</td></tr>
-                            </tbody>
-                        </table>
+                    <div class="table-container mb-5">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center furps-table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th colspan="2" rowspan="2">CARACTERÍSTICAS</th><th rowspan="2">FACTOR</th>
+                                        <th colspan="4">VALORACIÓN</th>
+                                    </tr>
+                                    <tr><th>Puntaje</th><th>Pnt. E</th><th>Punt</th><th>Total</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row-f"><td rowspan="3">F</td><td rowspan="3">FUNCIONALIDAD</td><td>Características y capacidades del programa</td><td>4</td><td>10</td><td rowspan="3">27,5</td><td rowspan="19" class="furps-grand-total">80,5</td></tr>
+                                    <tr class="row-f"><td>Generalidad de las funciones</td><td>4</td><td>10</td></tr>
+                                    <tr class="row-f"><td>Seguridad del Sistema</td><td>3</td><td>7,5</td></tr>
+                                    <tr class="row-u"><td rowspan="4">U</td><td rowspan="4">FACILIDAD DE USO</td><td>Capacidad de Prueba</td><td>3</td><td>3,8</td><td rowspan="4">18,8</td></tr>
+                                    <tr class="row-u"><td>Capacidad de configuración</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-u"><td>Compatibilidad</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-u"><td>Requisitos de instalación</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-r"><td rowspan="3">R</td><td rowspan="3">CONFIABILIDAD</td><td>Frecuencia y severidad de fallos</td><td>3</td><td>3,8</td><td rowspan="3">13,8</td></tr>
+                                    <tr class="row-r"><td>Exactitud de las salidas</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-r"><td>Capacidad de predicción</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-p"><td rowspan="4">P</td><td rowspan="4">RENDIMIENTO</td><td>Factores Humanos</td><td>4</td><td>5</td><td rowspan="4">18,8</td></tr>
+                                    <tr class="row-p"><td>Factores Estéticos</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-p"><td>Consistencia de la interfaz</td><td>4</td><td>5</td></tr>
+                                    <tr class="row-p"><td>Documentación</td><td>3</td><td>3,8</td></tr>
+                                    <tr class="row-s"><td rowspan="5">S</td><td rowspan="5">SOPORTE</td><td>Velocidad de procesamiento</td><td>4</td><td>3</td><td rowspan="5">13,6</td></tr>
+                                    <tr class="row-s"><td>Tiempo de respuesta</td><td>4</td><td>3</td></tr>
+                                    <tr class="row-s"><td>Consumo de recursos</td><td>3</td><td>2,3</td></tr>
+                                    <tr class="row-s"><td>Rendimiento efectivo total</td><td>4</td><td>3</td></tr>
+                                    <tr class="row-s"><td>Eficacia</td><td>3</td><td>2,3</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

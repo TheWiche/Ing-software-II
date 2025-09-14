@@ -10075,3 +10075,59 @@ h6,
     border-radius: 8px;
     height: 100%;
 }
+
+
+/* ========================================= */
+/* NUEVOS ESTILOS PERSONALIZADOS PARA TABLAS */
+/* ========================================= */
+
+/* Estilo general para todas las tablas de datos */
+.table {
+    background-color: #f8f9fa; /* Color de fondo grisáceo claro para el cuerpo de la tabla */
+    color: #212529;            /* Color de texto oscuro para mejorar la legibilidad */
+    border-radius: 0.25rem;    /* Bordes ligeramente redondeados */
+    overflow: hidden;          /* Asegura que los bordes redondeados se apliquen a las celdas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra sutil para dar profundidad */
+}
+
+/* Estilo para los encabezados de TODAS las tablas */
+.table thead th, 
+.table .thead-light th {
+    background-color: #343a40; /* Encabezado gris oscuro (casi negro) */
+    color: #ffffff;            /* Texto en color blanco para un alto contraste */
+    border-color: #454d55;     /* Borde ligeramente más claro que el fondo del encabezado */
+    text-transform: uppercase; /* Opcional: Pone el texto del encabezado en mayúsculas */
+    letter-spacing: 0.5px;     /* Opcional: Añade un poco de espacio entre letras */
+}
+
+/* Estilo específico para los encabezados de categorías (OPERACIÓN, etc.) */
+.mccall-table .operacion-header {
+    background-color: #5a5a5a !important;
+}
+.mccall-table .transicion-header {
+    background-color: #6c757d !important;
+}
+.mccall-table .revision-header {
+    background-color: #778899 !important;
+}
+
+/* Estilo para las filas de las tablas de resultados (para mantener la diferenciación) */
+.table .operacion-row {
+    background-color: #e9ecef;
+}
+.table .transicion-row {
+    background-color: #dee2e6;
+}
+.table .revision-row {
+    background-color: #ced4da;
+}
+
+/* Estilo para el pie de tabla (tfoot) para que también destaque */
+.table tfoot {
+    background-color: #e9ecef; /* Fondo gris claro para el pie de tabla */
+    font-weight: bold;         /* Texto en negrita */
+}
+
+.bg-f-color {
+    background-color: #fbe9e7; /* Naranja claro */
+}
