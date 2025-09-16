@@ -107,21 +107,23 @@
                 <div class="col-lg-8 text-center">
                     <h3 class="mb-3">Escala de Valoración Utilizada</h3>
                     <p>Se define la siguiente tabla de valoración para las evaluaciones de todos los modelos, la cual convierte una descripción cualitativa a una cuantificación numérica.</p>
-                    <div class="table-responsive d-inline-block mb-5">
-                        <table class="table table-bordered text-center" style="width: auto;">
-                            <thead class="bg-secondary">
-                                <tr>
-                                    <th>DESCRIPCIÓN</th>
-                                    <th>CUANTIFICACIÓN</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>EXCELENTE</td><td>4</td></tr>
-                                <tr><td>BUENO</td><td>3</td></tr>
-                                <tr><td>REGULAR</td><td>2</td></tr>
-                                <tr><td>MALO</td><td>1</td></tr>
-                            </tbody>
-                        </table>
+                    <div class="table-container mb-5 d-inline-block">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center" style="width: auto;">
+                                <thead class="bg-secondary">
+                                    <tr>
+                                        <th>DESCRIPCIÓN</th>
+                                        <th>CUANTIFICACIÓN</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>EXCELENTE</td><td>4</td></tr>
+                                    <tr><td>BUENO</td><td>3</td></tr>
+                                    <tr><td>REGULAR</td><td>2</td></tr>
+                                    <tr><td>MALO</td><td>1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,175 +132,205 @@
                  <div class="col-12">
                     <h3 class="mb-3">Estructura Jerárquica y Puntuación</h3>
                     <p>Para la evaluación, se asigna la siguiente tabla de puntuación teniendo en cuenta los niveles de cada característica.</p>
-                    <div class="table-responsive mb-5">
-                        <table class="table table-bordered boehm-table text-center">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Características de Alto Nivel</th><th>Puntaje</th>
-                                    <th>Características de Nivel Intermedio</th><th>Características Primitivas</th><th>Puntaje</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td class="col-main align-middle" rowspan="2">PORTABILIDAD</td><td class="align-middle" rowspan="2">10</td>
-                                    <td class="align-middle" rowspan="2"></td><td class="text-left">Independencia de Dispositivos</td><td class="align-middle" rowspan="1">5</td>
-                                </tr>
-                                <tr><td class="text-left">Auto-contención</td><td class="align-middle" rowspan="1">5</td>
-                                <tr><td class="col-main utilidad-general align-middle" rowspan="10">UTILIDAD</td><td class="align-middle" rowspan="10">70</td>
-                                    <td class="align-middle" rowspan="4">Fiabilidad</td><td class="text-left">Precisión</td><td class="align-middle" rowspan="4">40</td>
-                                </tr>
-                                <tr><td class="text-left">Completitud</td></tr><tr><td class="text-left">Robustez</td></tr><tr><td class="text-left">Consistencia</td></tr>
-                                <tr><td class="align-middle" rowspan="3">Eficiencia</td><td class="text-left">Responsabilidad</td><td class="align-middle" rowspan="3">15</td></tr>
-                                <tr><td class="text-left">Eficiencia de dispositivos</td></tr><tr><td class="text-left">Accesibilidad</td></tr>
-                                <tr><td class="align-middle" rowspan="3">Interactividad</td><td class="text-left">Robustez</td><td class="align-middle" rowspan="3">15</td></tr>
-                                <tr><td class="text-left">Accesibilidad</td></tr><tr><td class="text-left">Capacidad de comunicación</td></tr>
-                                <tr><td class="col-main mantenibilidad align-middle" rowspan="6">MANTENIBILIDAD</td><td class="align-middle" rowspan="6">20</td>
-                                    <td class="align-middle" rowspan="2">Facilidad de Prueba</td><td class="text-left">Auto descripción</td><td class="align-middle" rowspan="2">5</td>
-                                </tr>
-                                <tr><td class="text-left">Estructuración</td></tr>
-                                <tr><td class="align-middle" rowspan="2">Facilidad de Entendimiento</td><td class="text-left">Concisión</td><td class="align-middle" rowspan="2">10</td></tr>
-                                <tr><td class="text-left">Legibilidad</td></tr>
-                                <tr><td class="align-middle" rowspan="2">Modificabilidad</td><td class="text-left">Estructuración</td><td class="align-middle" rowspan="2">5</td></tr>
-                                <tr><td class="text-left">Escalabilidad</td></tr>
-                            </tbody>
-                            <tfoot class="font-weight-bold">
-                                <tr><td colspan="2">Puntaje Total</td><td colspan="2"></td><td>100</td></tr>
-                            </tfoot>
-                        </table>
+                    <div class="table-container mb-5">
+                        <div class="table-responsive">
+                            <table class="table table-bordered boehm-table text-center">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Características de Alto Nivel</th><th>Puntaje</th>
+                                        <th>Características de Nivel Intermedio</th><th>Características Primitivas</th><th>Puntaje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="col-main align-middle" rowspan="2">PORTABILIDAD</td><td class="align-middle" rowspan="2">10</td>
+                                        <td class="align-middle" rowspan="2">Portabilidad</td><td class="text-left">Independencia de Dispositivos</td><td class="align-middle">5</td>
+                                    </tr>
+                                    <tr><td class="text-left">Auto-contención</td><td class="align-middle">5</td></tr>
+                                    <tr><td class="col-main utilidad-general align-middle" rowspan="10">UTILIDAD</td><td class="align-middle" rowspan="10">70</td>
+                                        <td class="align-middle" rowspan="4">Fiabilidad</td><td class="text-left">Precisión</td><td class="align-middle" rowspan="4">40</td>
+                                    </tr>
+                                    <tr><td class="text-left">Completitud</td></tr><tr><td class="text-left">Robustez</td></tr><tr><td class="text-left">Consistencia</td></tr>
+                                    <tr><td class="align-middle" rowspan="3">Eficiencia</td><td class="text-left">Responsabilidad</td><td class="align-middle" rowspan="3">15</td></tr>
+                                    <tr><td class="text-left">Eficiencia de dispositivos</td></tr><tr><td class="text-left">Accesibilidad</td></tr>
+                                    <tr><td class="align-middle" rowspan="3">Interactividad</td><td class="text-left">Robustez</td><td class="align-middle" rowspan="3">15</td></tr>
+                                    <tr><td class="text-left">Accesibilidad</td></tr><tr><td class="text-left">Capacidad de comunicación</td></tr>
+                                    <tr><td class="col-main mantenibilidad align-middle" rowspan="6">MANTENIBILIDAD</td><td class="align-middle" rowspan="6">20</td>
+                                        <td class="align-middle" rowspan="2">Facilidad de Prueba</td><td class="text-left">Auto descripción</td><td class="align-middle" rowspan="2">5</td>
+                                    </tr>
+                                    <tr><td class="text-left">Estructuración</td></tr>
+                                    <tr><td class="align-middle" rowspan="2">Facilidad de Entendimiento</td><td class="text-left">Concisión</td><td class="align-middle" rowspan="2">10</td></tr>
+                                    <tr><td class="text-left">Legibilidad</td></tr>
+                                    <tr><td class="align-middle" rowspan="2">Modificabilidad</td><td class="text-left">Estructuración</td><td class="align-middle" rowspan="2">5</td></tr>
+                                    <tr><td class="text-left">Escalabilidad</td></tr>
+                                </tbody>
+                                <tfoot class="font-weight-bold">
+                                    <tr><td colspan="2">Puntaje Total</td><td colspan="2"></td><td>100</td></tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
 
                     <h2 class="text-center mb-5">Resultados de la Evaluación</h2>
                     
                     <h3 class="mb-3">Cuestionario de Características Primitivas</h3>
                     <p>Cada característica primitiva se evalúa a través de un cuestionario diseñado para medir el rendimiento de YouTube en áreas específicas.</p>
-                    <div class="table-responsive mb-5">
-                        <table class="table table-bordered table-striped boehm-table">
-                            <thead class="thead-light">
-                                <tr><th>Alto Nivel</th><th>Nivel Intermedio</th><th>Primitivas</th><th>Preguntas</th><th>Puntaje Esperado</th><th>Puntaje Obtenido</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td class="col-main" rowspan="2">PORTABILIDAD</td><td rowspan="2">Portabilidad</td><td>Independencia de Dispositivos</td><td>¿YouTube se puede ejecutar en cualquier dispositivo (PC, móvil, Smart TV, consolas)?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td>Auto-contención</td><td>¿Puede utilizarse offline (ej. descargas en la app móvil)?</td><td>Excelente</td><td>Bueno</td></tr>
-                                <tr><td class="col-main utilidad-general" rowspan="10">UTILIDAD</td><td rowspan="4">Fiabilidad</td><td>Precisión</td><td>¿Los resultados (reproducción, estadísticas, recomendaciones) son correctos?</td><td>Excelente</td><td>Bueno</td></tr>
-                                <tr><td>Completitud</td><td>¿YouTube ofrece todas las funciones esperadas para streaming (subida, listas, comentarios, descargas)?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td>Robustez</td><td>¿La aplicación responde de forma estable aun con conexiones lentas o interrupciones?</td><td>Bueno</td><td>Bueno</td></tr>
-                                <tr><td>Consistencia</td><td>¿Las funciones son consistentes en todas las plataformas (web, móvil, TV)?</td><td>Excelente</td><td>Bueno</td></tr>
-                                <tr><td rowspan="3">Eficiencia</td><td>Responsabilidad</td><td>¿La aplicación responde de manera rápida y eficiente en la carga de videos y navegación?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td>Eficiencia de dispositivos</td><td>¿Permite ejecutarse en cualquier navegador y sistema operativo?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td>Accesibilidad</td><td>¿Presenta facilidad de acceso e interfaz intuitiva para cualquier usuario?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td rowspan="3">Interactividad</td><td>Robustez</td><td>¿La interfaz es amigable y facilita la interacción?</td><td>Excelente</td><td>Bueno</td></tr>
-                                <tr><td>Accesibilidad</td><td>¿Permite navegación accesible a usuarios con discapacidades (subtítulos, lectores de pantalla, comandos por voz)?</td><td>Bueno</td><td>Bueno</td></tr>
-                                <tr><td>Capacidad de comunicación</td><td>¿Es interactivo con el usuario (comentarios, likes, suscripción)?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td class="col-main mantenibilidad" rowspan="6">MANTENIBILIDAD</td><td rowspan="2">Facilidad de Prueba</td><td>Auto descripción</td><td>¿YouTube presenta guías de uso o ayuda en línea?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td>Estructuración</td><td>¿Está organizado en módulos o secciones claras (Inicio, Shorts, Suscripciones, Biblioteca)?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td rowspan="2">Facilidad de Entendimiento</td><td>Concisión</td><td>¿Facilita la apropiación del uso en usuarios nuevos?</td><td>Excelente</td><td>Bueno</td></tr>
-                                <tr><td>Legibilidad</td><td>¿La tipografía y diseño son legibles y ajustables?</td><td>Excelente</td><td>Excelente</td></tr>
-                                <tr><td rowspan="2">Modificabilidad</td><td>Estructuración</td><td>¿Permite la facilidad de navegación y personalización (configuración de idioma, subtítulos, preferencias)?</td><td>Excelente</td><td>Bueno</td></tr>
-                                <tr><td>Escalabilidad</td><td>¿Es ajustable y escalable en su presentación (adaptación a dispositivos, crecimiento de usuarios, nuevas funciones)?</td><td>Excelente</td><td>Excelente</td></tr>
-                            </tbody>
-                        </table>
+                    <div class="table-container mb-5">
+                        <div class="table-responsive">
+                            <table class="table table-striped boehm-table">
+                                <thead class="thead-light">
+                                    <tr><th>Alto Nivel</th><th>Nivel Intermedio</th><th>Primitivas</th><th>Preguntas</th><th>Puntaje Esperado</th><th>Puntaje Obtenido</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="col-main" rowspan="2">PORTABILIDAD</td><td rowspan="2">Portabilidad</td><td>Independencia de Dispositivos</td><td>¿YouTube se puede ejecutar en cualquier dispositivo (PC, móvil, Smart TV, consolas)?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td>Auto-contención</td><td>¿Puede utilizarse offline (ej. descargas en la app móvil)?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td class="col-main utilidad-general" rowspan="10">UTILIDAD</td><td rowspan="4">Fiabilidad</td><td>Precisión</td><td>¿Los resultados (reproducción, estadísticas, recomendaciones) son correctos?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td>Completitud</td><td>¿YouTube ofrece todas las funciones esperadas para streaming (subida, listas, comentarios, descargas)?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td>Robustez</td><td>¿La aplicación responde de forma estable aun con conexiones lentas o interrupciones?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td>Consistencia</td><td>¿Las funciones son consistentes en todas las plataformas (web, móvil, TV)?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td rowspan="3">Eficiencia</td><td>Responsabilidad</td><td>¿La aplicación responde de manera rápida y eficiente en la carga de videos y navegación?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td>Eficiencia de dispositivos</td><td>¿Permite ejecutarse en cualquier navegador y sistema operativo?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td>Accesibilidad</td><td>¿Presenta facilidad de acceso e interfaz intuitiva para cualquier usuario?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td rowspan="3">Interactividad</td><td>Robustez</td><td>¿La interfaz es amigable y facilita la interacción?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td>Accesibilidad</td><td>¿Permite navegación accesible a usuarios con discapacidades (subtítulos, lectores de pantalla, comandos por voz)?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td>Capacidad de comunicación</td><td>¿Es interactivo con el usuario (comentarios, likes, suscripción)?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td class="col-main mantenibilidad" rowspan="6">MANTENIBILIDAD</td><td rowspan="2">Facilidad de Prueba</td><td>Auto descripción</td><td>¿YouTube presenta guías de uso o ayuda en línea?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td>Estructuración</td><td>¿Está organizado en módulos o secciones claras (Inicio, Shorts, Suscripciones, Biblioteca)?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td rowspan="2">Facilidad de Entendimiento</td><td>Concisión</td><td>¿Facilita la apropiación del uso en usuarios nuevos?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td>Legibilidad</td><td>¿La tipografía y diseño son legibles y ajustables?</td><td>Excelente</td><td>Excelente</td></tr>
+                                    <tr><td rowspan="2">Modificabilidad</td><td>Estructuración</td><td>¿Permite la facilidad de navegación y personalización (configuración de idioma, subtítulos, preferencias)?</td><td>Excelente</td><td>Bueno</td></tr>
+                                    <tr><td>Escalabilidad</td><td>¿Es ajustable y escalable en su presentación (adaptación a dispositivos, crecimiento de usuarios, nuevas funciones)?</td><td>Excelente</td><td>Excelente</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                     <h3 class="mb-3">Puntuación Obtenida</h3>
-                     <div class="table-responsive mb-5">
-                         <table class="table table-bordered text-center boehm-table">
-                             <thead class="thead-light">
-                                <tr>
-                                    <th>Alto Nivel</th><th>Nivel Intermedio</th><th>Primitivas</th>
-                                    <th>Puntaje Esperado</th><th>Puntaje Obtenido</th><th>Promedio Nivel</th>
-                                    <th>Puntaje Nivel</th><th>Promedio Total</th>
-                                </tr>
-                             </thead>
-                             <tbody>
-                                <tr>
-                                   <td class="col-main align-middle" rowspan="2">PORTABILIDAD</td><td class="align-middle" rowspan="2"></td>
-                                   <td class="text-left">Independencia de Dispositivos</td><td>4</td><td>4</td>
-                                   <td rowspan="2">3,3</td><td rowspan="2">8,8</td><td rowspan="2">8,8</td>
-                                </tr>
-                                <tr><td class="text-left">Auto-contención</td><td>4</td><td>3</td></tr>
-                                <tr>
-                                   <td class="col-main utilidad-general align-middle" rowspan="10">UTILIDAD</td>
-                                   <td class="align-middle" rowspan="4">Fiabilidad</td>
-                                   <td class="text-left">Precisión</td><td>4</td><td>3</td>
-                                   <td rowspan="4">3,3</td><td rowspan="4">32,5</td><td rowspan="10">20,03</td>
-                                </tr>
-                                <tr><td class="text-left">Completitud</td><td>4</td><td>4</td></tr>
-                                <tr><td class="text-left">Robustez</td><td>3</td><td>3</td></tr>
-                                <tr><td class="text-left">Consistencia</td><td>4</td><td>3</td></tr>
-                                <tr>
-                                    <td class="align-middle" rowspan="3">Eficiencia</td>
-                                    <td class="text-left">Responsabilidad</td><td>4</td><td>4</td>
-                                    <td rowspan="3">4</td><td rowspan="3">15</td>
-                                </tr>
-                                <tr><td class="text-left">Eficiencia de dispositivos</td><td>4</td><td>4</td></tr>
-                                <tr><td class="text-left">Accesibilidad</td><td>4</td><td>4</td></tr>
-                                <tr>
-                                    <td class="align-middle" rowspan="3">Interactividad</td>
-                                    <td class="text-left">Robustez</td><td>4</td><td>3</td>
-                                    <td rowspan="3">3,3</td><td rowspan="3">12,6</td>
-                                </tr>
-                                <tr><td class="text-left">Accesibilidad</td><td>3</td><td>3</td></tr>
-                                <tr><td class="text-left">Capacidad de comunicación</td><td>4</td><td>4</td></tr>
-                                <tr>
-                                   <td class="col-main mantenibilidad align-middle" rowspan="6">MANTENIBILIDAD</td>
-                                   <td class="align-middle" rowspan="2">Facilidad de Prueba</td>
-                                   <td class="text-left">Auto descripción</td><td>4</td><td>4</td>
-                                   <td rowspan="2">4</td><td rowspan="2">5</td><td rowspan="6">6,1</td>
-                                </tr>
-                                <tr><td class="text-left">Estructuración</td><td>4</td><td>4</td></tr>
-                                <tr>
-                                   <td class="align-middle" rowspan="2">Facilidad de Entendimiento</td>
-                                    <td class="text-left">Concisión</td><td>4</td><td>3</td>
-                                    <td rowspan="2">3,3</td><td rowspan="2">8,8</td>
-                                </tr>
-                                <tr><td class="text-left">Legibilidad</td><td>4</td><td>4</td></tr>
-                                <tr>
-                                   <td class="align-middle" rowspan="2">Modificabilidad</td>
-                                    <td class="text-left">Estructuración</td><td>4</td><td>3</td>
-                                    <td rowspan="2">3,3</td><td rowspan="2">4,4</td>
-                                </tr>
-                                <tr><td class="text-left">Escalabilidad</td><td>4</td><td>4</td></tr>
-                             </tbody>
-                         </table>
+                     <div class="table-container mb-5">
+                         <div class="table-responsive">
+                             <table class="table table-bordered text-center boehm-table">
+                                 <thead class="thead-light">
+                                    <tr>
+                                        <th>Alto Nivel</th><th>Nivel Intermedio</th><th>Primitivas</th>
+                                        <th>Puntaje Esperado</th><th>Puntaje Obtenido</th><th>Promedio Nivel</th>
+                                        <th>Puntaje Nivel</th><th>Promedio Total</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td class="col-main align-middle" rowspan="2">PORTABILIDAD</td><td class="align-middle" rowspan="2">-</td>
+                                       <td class="text-left">Independencia de Dispositivos</td><td>4</td><td>4</td>
+                                       <td class="align-middle" rowspan="2">3,3</td><td class="align-middle" rowspan="2">8,8</td><td class="align-middle" rowspan="2">8,8</td>
+                                    </tr>
+                                    <tr><td class="text-left">Auto-contención</td><td>4</td><td>3</td></tr>
+                                    <tr>
+                                       <td class="col-main utilidad-general align-middle" rowspan="10">UTILIDAD</td>
+                                       <td class="align-middle" rowspan="4">Fiabilidad</td>
+                                       <td class="text-left">Precisión</td><td>4</td><td>3</td>
+                                       <td class="align-middle" rowspan="4">3,3</td><td class="align-middle" rowspan="4">32,5</td><td class="align-middle" rowspan="10">20,03</td>
+                                    </tr>
+                                    <tr><td class="text-left">Completitud</td><td>4</td><td>4</td></tr>
+                                    <tr><td class="text-left">Robustez</td><td>3</td><td>3</td></tr>
+                                    <tr><td class="text-left">Consistencia</td><td>4</td><td>3</td></tr>
+                                    <tr>
+                                        <td class="align-middle" rowspan="3">Eficiencia</td>
+                                        <td class="text-left">Responsabilidad</td><td>4</td><td>4</td>
+                                        <td class="align-middle" rowspan="3">4</td><td class="align-middle" rowspan="3">15</td>
+                                    </tr>
+                                    <tr><td class="text-left">Eficiencia de dispositivos</td><td>4</td><td>4</td></tr>
+                                    <tr><td class="text-left">Accesibilidad</td><td>4</td><td>4</td></tr>
+                                    <tr>
+                                        <td class="align-middle" rowspan="3">Interactividad</td>
+                                        <td class="text-left">Robustez</td><td>4</td><td>3</td>
+                                        <td class="align-middle" rowspan="3">3,3</td><td class="align-middle" rowspan="3">12,6</td>
+                                    </tr>
+                                    <tr><td class="text-left">Accesibilidad</td><td>3</td><td>3</td></tr>
+                                    <tr><td class="text-left">Capacidad de comunicación</td><td>4</td><td>4</td></tr>
+                                    <tr>
+                                       <td class="col-main mantenibilidad align-middle" rowspan="6">MANTENIBILIDAD</td>
+                                       <td class="align-middle" rowspan="2">Facilidad de Prueba</td>
+                                       <td class="text-left">Auto descripción</td><td>4</td><td>4</td>
+                                       <td class="align-middle" rowspan="2">4</td><td class="align-middle" rowspan="2">5</td><td class="align-middle" rowspan="6">6,1</td>
+                                    </tr>
+                                    <tr><td class="text-left">Estructuración</td><td>4</td><td>4</td></tr>
+                                    <tr>
+                                       <td class="align-middle" rowspan="2">Facilidad de Entendimiento</td>
+                                        <td class="text-left">Concisión</td><td>4</td><td>3</td>
+                                        <td class="align-middle" rowspan="2">3,3</td><td class="align-middle" rowspan="2">8,8</td>
+                                    </tr>
+                                    <tr><td class="text-left">Legibilidad</td><td>4</td><td>4</td></tr>
+                                    <tr>
+                                       <td class="align-middle" rowspan="2">Modificabilidad</td>
+                                        <td class="text-left">Estructuración</td><td>4</td><td>3</td>
+                                        <td class="align-middle" rowspan="2">3,3</td><td class="align-middle" rowspan="2">4,4</td>
+                                    </tr>
+                                    <tr><td class="text-left">Escalabilidad</td><td>4</td><td>4</td></tr>
+                                 </tbody>
+                             </table>
+                        </div>
                     </div>
                     
                     <h3 class="mb-3">Resultados Finales de la Evaluación</h3>
                     <p>Los datos del cuestionario se consolidan y ponderan a través de la jerarquía del modelo para obtener la calificación de calidad final.</p>
-                    <div class="table-responsive mb-5">
-                        <table class="table table-bordered text-center boehm-table">
-                            <thead class="thead-light">
-                                <tr><th>Alto Nivel</th><th>Nivel Intermedio</th><th>Primitivas</th><th>Puntaje Obtenido</th><th>Puntaje Escala</th><th>Total Nivel</th><th>Puntaje Nivel</th><th>Total Evaluación</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td class="col-main align-middle" rowspan="2">PORTABILIDAD</td><td class="align-middle" rowspan="2"></td><td class="text-left">Independencia de Dispositivos</td><td>4</td><td>5</td><td rowspan="2">8,8</td><td rowspan="2">8,8</td><td rowspan="18" class="final-score-cell">87,1</td></tr>
-                                <tr><td class="text-left">Auto-contención</td><td>3</td><td>3,8</td></tr>
-                                <tr><td class="col-main utilidad-general align-middle" rowspan="10">UTILIDAD</td><td class="align-middle" rowspan="4">Fiabilidad</td><td class="text-left">Precisión</td><td>3</td><td>7,5</td><td rowspan="4">32,5</td><td rowspan="10">60,1</td></tr>
-                                <tr><td class="text-left">Completitud</td><td>4</td><td>10</td></tr>
-                                <tr><td class="text-left">Robustez</td><td>3</td><td>7,5</td></tr>
-                                <tr><td class="text-left">Consistencia</td><td>3</td><td>7,5</td></tr>
-                                <tr><td class="align-middle" rowspan="3">Eficiencia</td><td class="text-left">Responsabilidad</td><td>4</td><td>5</td><td rowspan="3">15</td></tr>
-                                <tr><td class="text-left">Eficiencia de dispositivos</td><td>4</td><td>5</td></tr>
-                                <tr><td class="text-left">Accesibilidad</td><td>4</td><td>5</td></tr>
-                                <tr><td class="align-middle" rowspan="3">Interactividad</td><td class="text-left">Robustez</td><td>3</td><td>3,8</td><td rowspan="3">12,6</td></tr>
-                                <tr><td class="text-left">Accesibilidad</td><td>3</td><td>3,8</td></tr>
-                                <tr><td class="text-left">Capacidad de comunicación</td><td>4</td><td>5</td></tr>
-                                <tr><td class="col-main mantenibilidad align-middle" rowspan="6">MANTENIBILIDAD</td><td class="align-middle" rowspan="2">Facilidad de Prueba</td><td class="text-left">Auto descripción</td><td>4</td><td>2,5</td><td rowspan="2">5</td><td rowspan="6">18,2</td></tr>
-                                <tr><td class="text-left">Estructuración</td><td>4</td><td>2,5</td></tr>
-                                <tr><td class="align-middle" rowspan="2">Facilidad de Entendimiento</td><td class="text-left">Concisión</td><td>3</td><td>3,8</td><td rowspan="2">8,8</td></tr>
-                                <tr><td class="text-left">Legibilidad</td><td>4</td><td>5</td></tr>
-                                <tr><td class="align-middle" rowspan="2">Modificabilidad</td><td class="text-left">Estructuración</td><td>3</td><td>1,9</td><td rowspan="2">4,4</td></tr>
-                                <tr><td class="text-left">Escalabilidad</td><td>4</td><td>2,5</td></tr>
-                            </tbody>
-                        </table>
+                    <div class="table-container mb-5">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center boehm-table">
+                                <thead class="thead-light">
+                                    <tr><th>Alto Nivel</th><th>Nivel Intermedio</th><th>Primitivas</th><th>Puntaje Obtenido</th><th>Puntaje Escala</th><th>Total Nivel</th><th>Puntaje Nivel</th><th>Total Evaluación</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="col-main align-middle" rowspan="2">PORTABILIDAD</td><td class="align-middle" rowspan="2">-</td><td class="text-left">Independencia de Dispositivos</td><td>4</td><td>5</td><td class="align-middle" rowspan="2">8,8</td><td class="align-middle" rowspan="2">8,8</td><td rowspan="16" class="final-score-cell">87,1</td></tr>
+                                    <tr><td class="text-left">Auto-contención</td><td>3</td><td>3,8</td></tr>
+                                    <tr><td class="col-main utilidad-general align-middle" rowspan="10">UTILIDAD</td><td class="align-middle" rowspan="4">Fiabilidad</td><td class="text-left">Precisión</td><td>3</td><td>7,5</td><td class="align-middle" rowspan="4">32,5</td><td class="align-middle" rowspan="10">60,1</td></tr>
+                                    <tr><td class="text-left">Completitud</td><td>4</td><td>10</td></tr>
+                                    <tr><td class="text-left">Robustez</td><td>3</td><td>7,5</td></tr>
+                                    <tr><td class="text-left">Consistencia</td><td>3</td><td>7,5</td></tr>
+                                    <tr><td class="align-middle" rowspan="3">Eficiencia</td><td class="text-left">Responsabilidad</td><td>4</td><td>5</td><td class="align-middle" rowspan="3">15</td></tr>
+                                    <tr><td class="text-left">Eficiencia de dispositivos</td><td>4</td><td>5</td></tr>
+                                    <tr><td class="text-left">Accesibilidad</td><td>4</td><td>5</td></tr>
+                                    <tr><td class="align-middle" rowspan="3">Interactividad</td><td class="text-left">Robustez</td><td>3</td><td>3,8</td><td class="align-middle" rowspan="3">12,6</td></tr>
+                                    <tr><td class="text-left">Accesibilidad</td><td>3</td><td>3,8</td></tr>
+                                    <tr><td class="text-left">Capacidad de comunicación</td><td>4</td><td>5</td></tr>
+                                    <tr><td class="col-main mantenibilidad align-middle" rowspan="6">MANTENIBILIDAD</td><td class="align-middle" rowspan="2">Facilidad de Prueba</td><td class="text-left">Auto descripción</td><td>4</td><td>2,5</td><td class="align-middle" rowspan="2">5</td><td class="align-middle" rowspan="6">18,2</td></tr>
+                                    <tr><td class="text-left">Estructuración</td><td>4</td><td>2,5</td></tr>
+                                    <tr><td class="align-middle" rowspan="2">Facilidad de Entendimiento</td><td class="text-left">Concisión</td><td>3</td><td>3,8</td><td class="align-middle" rowspan="2">8,8</td></tr>
+                                    <tr><td class="text-left">Legibilidad</td><td>4</td><td>5</td></tr>
+                                    <tr><td class="align-middle" rowspan="2">Modificabilidad</td><td class="text-left">Estructuración</td><td>3</td><td>1,9</td><td class="align-middle" rowspan="2">4,4</td></tr>
+                                    <tr><td class="text-left">Escalabilidad</td><td>4</td><td>2,5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Fuentes</h5>
+                <h1>Referencias del Modelo</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p>Boehm, B. W., Brown, J. R., Kaspar, H., Lipow, M., MacLeod, G. J., & Merrit, M. J. (1978). Characteristics of Software Quality. North-Holland Publishing Co.</p>
+                    <p>Abran, A., Khelifi, A., Suryn, W., & Seffah, A. (2003). Consolidating the ISO 9126-1 Quality Model. 2003 International Symposium on Software Testing and Analysis, 105-114. Recuperado de <a href="https://www.researchgate.net/publication/220743518_Consolidating_the_ISO_9126-1_quality_model" target="_blank">https://www.researchgate.net/publication/220743518</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between mt-5 px-lg-5">
+        <a href="mccall.html" class="btn btn-secondary py-2 px-4">
+            <i class="fa fa-arrow-left mr-2"></i> Modelo Anterior: McCall
+        </a>
+        <a href="furps.html" class="btn btn-primary py-2 px-4">
+            Siguiente Modelo: FURPS <i class="fa fa-arrow-right ml-2"></i>
+        </a>
+    </div>
     <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5 justify-content-center">
             <div class="col-lg-10 col-md-12">
                 <div class="row">
-                    <div class="col-md-6 mb-5">
+                    <div class="col-md-4 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Modelos Analizados</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-white mb-2" href="mccall.html"><i class="fa fa-angle-right mr-2"></i>McCall</a>
@@ -306,12 +338,16 @@
                             <a class="text-white" href="furps.html"><i class="fa fa-angle-right mr-2"></i>FURPS</a>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-5">
+                    <div class="col-md-4 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Integrantes</h5>
                         <p><i class="fa fa-user mr-2"></i>Edwin Ceballos</p>
                         <p><i class="fa fa-user mr-2"></i>Joel Barrios</p>
                         <p><i class="fa fa-user mr-2"></i>Juan Lemus</p>
                         <p><i class="fa fa-user mr-2"></i>Nelson Cotes</p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Referencias Generales</h5>
+                        <p><i class="fab fa-youtube mr-2"></i>YouTube. (s.f.). En Wikipedia. Recuperado el 15 de septiembre de 2025, de <a href="https://es.wikipedia.org/wiki/YouTube" class="text-white-50" target="_blank">https://es.wikipedia.org/wiki/YouTube</a></p>
                     </div>
                 </div>
             </div>
